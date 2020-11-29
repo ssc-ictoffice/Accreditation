@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<title>AACCUP Accreditiation-BSEd</title>
-	<meta name="google-signin-client_id" content="890060897051-84s0l4k6jqf2dgp0p8oo8jhir9ju1svd.apps.googleusercontent.com">
   	<meta charset="UTF-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +17,6 @@
 
   <script src="js/jqueryNEW.min.js"></script>
   <script src="js/bootstrapNEW.min.js"></script>
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <style media="screen">
 
@@ -92,20 +90,9 @@ background-color:rgba(255, 255, 255, 0.7);
 box-shadow: 2px 2px 15px #000000;
 }
 
-.data{
-	display: none;
-}
 
 </style>
 
-<script>
-  function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      window.location.href = "https://accounts.google.com";
-    });
-  }
-</script>
 
 </head>
 
@@ -115,14 +102,8 @@ box-shadow: 2px 2px 15px #000000;
 			<img src="images/googlewebbanner.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image" style="position: -webkit-sticky; position: sticky; top: 0; width:100%;">
 		</div>
 		<div class="col-sm-5">
-		    <div style="padding: 2% 0;">
+		    <div style="padding: 5% 0;">
 		        <h2 style="color: blue;"><b>AACCUP 4th SURVEY<br>Bachelor of Secondary Education (BSEd)</b></h2>
-		        <h4 class="signInCredentials" style="display: none;">
-		          You are logged-in as: <label id="loginName"></label>
-		          <br/>
-		          email address: <label id="email"></label>
-		        <a type="button" class="btn btn-danger signInCredentials" href="#" onclick="signOut();" style="display: none; width: 20%;">Sign out</a>
-		        </h4>
 		    </div>
 		</div>
 		<div class="col-sm-1">&nbsp;</div>
@@ -134,15 +115,8 @@ box-shadow: 2px 2px 15px #000000;
 
 	<br>
 	<br>
-	<!-- GOOGLE SIGN IN -->
-	<div style="width: 100%; text-align: center;" class="textonSignIn">
-		<h1 style="padding: 5% 0;"><b>Please sign-in using the GSuite Account given.</b></h1>
-		<div style="display: inline-block; margin: 0 auto; padding: 3px;">
-			<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" data-width="400" data-height="70" data-longtitle="true"></div>
-		</div>
-	</div>
 
-	<div class="row data">
+	<div class="row">
 		<div class="col-sm-1">&nbsp;</div>
 		<div class="col-sm-7 rcorners2">
 
